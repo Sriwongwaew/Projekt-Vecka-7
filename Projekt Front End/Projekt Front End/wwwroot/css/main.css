@@ -1,0 +1,134 @@
+﻿body {
+    background-color: antiquewhite;
+}
+
+h4 {
+    padding-top: 16px;
+    font-family: Arial;
+    color: #2d3849;
+}
+
+.rounded float-left {
+}
+
+
+p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #2d3849;
+}
+
+
+.form-group-one {
+    padding-top: 20px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+
+    .carousel-indicators li.active {
+        background-color: #f4511e;
+    }
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.thumbnail img {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.full-width-push {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.2rem 4.5rem 0 4.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    line-height: 1.1em;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.btn btn-default {
+    text-align: center;
+}
+
+.btn {
+    background-color: white;
+}
+
+.btn-default:hover {
+    background-color: lightgray;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+    top: 40%;
+    box-sizing: content-box;
+}
+
+
+.text-center {
+    color: white;
+}
+
+.img-fluid {
+    max-height: 500px;
+    max-width: 800px;
+}
+
+
+button:hover {
+    background-color: white;
+}
+
+button {
+    background-color: whitesmoke;
+}
+
+.dropdown-item {
+    border: 1px inset gray;
+}
+
+.btn-group {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 2%;
+    border-bottom: groove
+}
+
+    .btn-group button {
+    }
+
+#small-logo {
+    height: 100%;
+    width: auto;
+}
+
+#startimg {
+    background-color: transparent;
+}
