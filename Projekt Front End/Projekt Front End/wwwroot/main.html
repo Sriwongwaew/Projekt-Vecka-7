@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MinSida</title>
+    <title>Unsafe travels</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -13,44 +13,130 @@
 
 
 </head>
-<body style="background-color:antiquewhite;">
-    <div style="background-color:whitesmoke;">
+<body>
+    <div>
 
         <!--headermeny-->
         <div class=" btn-group" role="group" aria-label="Basic example">
 
             <button id="button1" style="border:none;height:50px;width:200px;">
-                <img id="small-logo" src="img/planecrash.png" /> COMPANY
+                <img id="small-logo" src="img/planecrash.png" /> UNSAFE TRAVELS
             </button>
 
 
             <button id="button2" style="border:none;height:50px;width:200px;">
-                RESMÅL
+                DESTINATIONS
             </button>
 
 
             <button id="button3" style="border:none;height:50px;width:200px;">
-                HOTELL
+                HOTELS
             </button>
 
 
             <button id="button4" style="border:none;height:50px;width:200px;">
-                MIN SIDA
+                MY PAGE
             </button>
 
         </div>
 
-        <div class="container">
-            <!----<div class="text-center">
-                    <img id="startimg" src="img/startimg.jpg" class="img-fluid" />
-                    <div class="bottom-right"><h2>Go where you feel the most alive.</h2></div>
+        <!-- HEADER -->
+        <header class="py-5 bg-image-full" style="background-image: url('https://picsum.photos/1900/1080');">
+            <h2>Go where you feel the most alive.</h2>
+        </header>
+
+        <div class="text-center">
+            <br /><br />
+            <h3>DESTINATIONS</h3>
+            <br /><br />
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/garbage-city.jpg">
+                        <p><strong>SOMEWHERE</strong></p>
+                        <p>Blabla</p>
+                    </div>
                 </div>
-    -->
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/garbage-city.jpg">
+                        <p><strong>SOMEWHERE</strong></p>
+                        <p>Blabla</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/garbage-city.jpg">
+                        <p><strong>SOMEWHERE</strong></p>
+                        <p>Blabla</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>BOOK OUR HOTEL</h3>
+            <br /><br />
+
+                  <div class="thumbnail">
+                      <a href="test.html"><img src="img/buggy.jpg" style="width: 20%; height: auto;"></a>
+
+                          <p><strong>BUGGY HOTEL</strong></p>
+                          <p>
+                              It has a rating of two stars on Tripadvisor, with 44 per cent of
+                              people giving the hotel a rating of "terrible".
+                          </p>
+                      </div>
+
+
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for destinations">
+
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:60%;">Destinations</th>
+                </tr>
+                <tr>
+                    <td>Pyongyang</td>
+                </tr>
+                <tr>
+                    <td>Göteborg</td>
+                </tr>
+                <tr>
+                    <td>London</td>
+                </tr>
+                <tr>
+                    <td>Berlin</td>
+                </tr>
+            </table>
         </div>
 
-        </div>
-
-
-
+        <!-- Footer -->
+        <footer class="py-4 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Company 2018</p>
+            </div>
+        </footer>
 </body>
 </html>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+</script>
