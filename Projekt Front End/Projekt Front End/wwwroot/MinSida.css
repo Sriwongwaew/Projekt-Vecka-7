@@ -7,3 +7,49 @@ button{
 .dropdown-item{
     border:1px inset gray;
 }
+#loginbar {
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    border: 2px solid gray;
+    margin-top: 180px;
+}
+#loginheader{
+    height:30px;
+    margin-top:20px;
+    border-radius:10px;
+}
+#chatbutton {
+    padding-top:200px;
+    margin-right:80%;
+}
+#chat{
+    height:300px;
+    width:400px;
+    padding-right:25%;
+}
+#chatheader {
+background-color:lightskyblue;
+padding:5px;
+
+}
+#button1 {
+    border: none;
+    height: 50px;
+    width: 200px;
+}
+#button2 {
+    border: none;
+    height: 50px;
+    width: 200px;
+}
+#button3 {
+    border: none;
+    height: 50px;
+    width: 200px;
+}
+#button4 {
+    border: none;
+    height: 50px;
+    width: 200px;
+}

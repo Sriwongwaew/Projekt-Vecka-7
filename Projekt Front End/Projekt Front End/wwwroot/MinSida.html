@@ -19,24 +19,24 @@
         <!--headermeny-->
         <div class="btn-group" role="group" aria-label="Basic example" style="background-color:whitesmoke">
 
-            <button id="button1" style="border:none;height:50px;width:200px;">
+            <button id="button1">
 
                 text
             </button>
 
 
-            <button id="button2" style="border:none;height:50px;width:200px;">
+            <button id="button2">
 
                 text
             </button>
 
 
-            <button id="button3" style="border:none;height:50px;width:200px;">
+            <button id="button3">
                 text
             </button>
 
 
-            <button id="button4" style="border:none;height:50px;width:200px;">
+            <button id="button4">
                 text
             </button>
 
@@ -47,15 +47,16 @@
 
 
 
-    <div class="container" style="background-color:white;width:700px;height:500px;border: 2px solid gray;margin-top:180px;">
 
-        <header style="background-color:gray;height:30px;margin-top:20px;width:">
+    <div class="container" id="loginbar">
 
+        <header id="loginheader">
+            <h2 style="text-align:center">Login</h2>
 
         </header>
 
         <form>
-            <div class="form-group" style="margin-top:90px">
+            <div class="form-group" style="margin-top:60px">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -68,20 +69,52 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button  class="btn btn-primary" id="knapp1">
+                Submit
+            </button>
 
-            <a class="dropdown-item" href="#";>New around here? Sign up</a>
+            <a class="dropdown-item" href="#" ;>New around here? Sign up</a>
             <a class="dropdown-item" href="#">Forgot password?</a>
 
         </form>
 
 
-
     </div>
 
+    <!--dropup chat-->
+    <div class="btn-group dropup" id="chatbutton">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Chat with us!
+        </button>
+
+
+
+        <div class="dropdown-menu" id="chat">
+            <div class="col-sm-3 col-sm-offset-4 frame">
+                <ul></ul>
+                <div>
+                    <div class="msj-rta macro">
+                        <div class="text text-r" style="background:whitesmoke !important">
+                            <input class="mytext" placeholder="Type a message" />
+                        </div>
+                    </div>
+                    <div style="padding:10px;">
+                        <span class="glyphicon glyphicon-share-alt"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
 
 
 
 
+
+
+
+    <footer>
+    </footer>
+    <script src="MinSida.js"></script>
 </body>
 </html>
