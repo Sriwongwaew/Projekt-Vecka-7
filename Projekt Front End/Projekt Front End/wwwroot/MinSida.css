@@ -34,22 +34,52 @@ padding:5px;
 
 }
 #button1 {
+    font:bold;
+    font-size:20px;
     border: none;
     height: 50px;
     width: 200px;
 }
 #button2 {
+    font: bold;
+    font-size: 20px;
     border: none;
     height: 50px;
     width: 200px;
 }
 #button3 {
+    font: bold;
+    font-size: 20px;
     border: none;
     height: 50px;
     width: 200px;
 }
 #button4 {
+    font: bold;
+    font-size: 20px;
     border: none;
     height: 50px;
     width: 200px;
+}
+
+body {
+    background-color:antiquewhite;
+}
+
+#loggedin {
+    background-color: white;
+    width: 1800px;
+    height: 800px;
+    border: 2px solid gray;
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+#searchbar {
+    margin-left:800px;
+}
+
+#forms {
+    padding-top:100px;
+    padding-left:35%;
 }
