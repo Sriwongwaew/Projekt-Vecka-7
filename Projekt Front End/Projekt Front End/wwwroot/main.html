@@ -14,7 +14,8 @@
 
 </head>
 <body>
-    <div>
+    <body style="background-color:antiquewhite;">
+
 
         <!--headermeny-->
         <div class=" btn-group" role="group" aria-label="Basic example">
@@ -23,10 +24,9 @@
                 <img id="small-logo" src="img/planecrash.png" /> UNSAFE TRAVELS
             </button>
 
-
-            <button id="button2" style="border:none;height:50px;width:200px;">
-                DESTINATIONS
-            </button>
+                <button id="button2" style="border:none;height:50px;width:200px;">
+                    DESTINATIONS
+                </button>
 
 
             <button id="button3" style="border:none;height:50px;width:200px;">
@@ -82,15 +82,15 @@
             <h3>BOOK OUR HOTEL</h3>
             <br /><br />
 
-                  <div class="thumbnail">
-                      <a href="test.html"><img src="img/buggy.jpg" style="width: 20%; height: auto;"></a>
+            <div class="thumbnail">
+                <a href="test.html"><img src="img/buggy.jpg" style="width: 20%; height: auto;"></a>
 
-                          <p><strong>BUGGY HOTEL</strong></p>
-                          <p>
-                              It has a rating of two stars on Tripadvisor, with 44 per cent of
-                              people giving the hotel a rating of "terrible".
-                          </p>
-                      </div>
+                <p><strong>BUGGY HOTEL</strong></p>
+                <p>
+                    It has a rating of two stars on Tripadvisor, with 44 per cent of
+                    people giving the hotel a rating of "terrible".
+                </p>
+            </div>
 
 
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for destinations">
@@ -120,7 +120,7 @@
                 <p class="m-0 text-center text-white">Copyright &copy; Company 2018</p>
             </div>
         </footer>
-</body>
+    </body>
 </html>
 
 <script>
@@ -144,5 +144,28 @@
             }
         }
     }
+    let button1 = document.getElementById("button1");
+    let button2 = document.getElementById("button2");
+    let button3 = document.getElementById("button3");
+    let button4 = document.getElementById("button4");
+
+    button1.addEventListener("click", () => {
+        window.location.href = "main.html";
+    })
+
+    button2.addEventListener("click", () => {
+        window.location.href = "TravelLocations.html";
+    })
+
+
+    button3.addEventListener("click", () => {
+        window.location.href = "test.html";
+    })
+
+
+    button4.addEventListener("click", () => {
+        window.location.href = "MinSida.html";
+    })
+
 
 </script>

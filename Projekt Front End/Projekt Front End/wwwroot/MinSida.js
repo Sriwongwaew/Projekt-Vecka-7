@@ -6,20 +6,20 @@ let button4 = document.getElementById("button4");
 let loginbutton = document.getElementById("knapp1");
 
 button1.addEventListener("click", () => {
-    window.location.href = "Main.html";
+    window.location.href = "main.html";
 })
 
 button2.addEventListener("click", () => {
-    window.location.href = "Minsida.html";
+    window.location.href = "TravelLocations.html";
 })
 
 
 button3.addEventListener("click", () => {
-    window.location.href = ".html";
+    window.location.href = "test.html";
 })
 
 
 button4.addEventListener("click", () => {
-    window.location.href = "Minsida2.html";
+    window.location.href = "MinSida.html";
 })
 
