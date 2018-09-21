@@ -1,8 +1,40 @@
-﻿button:hover{
-    background-color:white;
+﻿.btn btn-default {
+    text-align: center;
 }
-button{
-    background-color:whitesmoke;
+
+.btn {
+    background-color: white;
+}
+
+.btn-default:hover {
+    background-color: lightgray;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button {
+    background-color: whitesmoke;
+}
+
+.dropdown-item {
+    border: 1px inset gray;
+}
+
+.btn-group {
+    background-color: whitesmoke;
+    width: 100%;
+    border-bottom: groove;
+}
+
+    .btn-group button {
+    }
+
+
+#small-logo {
+    height: 100%;
+    width: auto;
 }
 .dropdown-item{
     border:1px inset gray;
@@ -33,34 +65,7 @@ background-color:lightskyblue;
 padding:5px;
 
 }
-#button1 {
-    font:bold;
-    font-size:20px;
-    border: none;
-    height: 50px;
-    width: 200px;
-}
-#button2 {
-    font: bold;
-    font-size: 20px;
-    border: none;
-    height: 50px;
-    width: 200px;
-}
-#button3 {
-    font: bold;
-    font-size: 20px;
-    border: none;
-    height: 50px;
-    width: 200px;
-}
-#button4 {
-    font: bold;
-    font-size: 20px;
-    border: none;
-    height: 50px;
-    width: 200px;
-}
+
 
 body {
     background-color:antiquewhite;
@@ -75,11 +80,11 @@ body {
     margin-bottom: 50px;
 }
 
-#searchbar {
+/*#searchbar {
     margin-left:800px;
 }
 
 #forms {
     padding-top:100px;
     padding-left:35%;
-}
+}*/
