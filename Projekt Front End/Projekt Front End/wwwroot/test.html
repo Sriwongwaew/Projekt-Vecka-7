@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <style>
+        #backgroundImage {
+            z-index: 1;
+        }
+
+            #backgroundImage:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: url(/hotell.jpg);
+                background-repeat: no-repeat;
+             
+                background-size: cover;
+                opacity: 0.5;
+                filter: alpha(opacity=10);
+                height: 100%;
+                width: 100%;
+            }
+
+      
+
+        h1 {
+            background-color:lightgoldenrodyellow;
+            font-size: 60px;
+            text-align: center;
+            opacity: 0.6;
+        }
+        body {
+            max-width: 1180px;
+            width: 98%;
+            margin: 0px auto;
+            text-align: center;
+           // color: black;
+        }
+        caption {
+            font-size: 30px;
+            margin-top: 40px;
+          
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+       
+        table.center {
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        form {
+            margin-left: 15%;
+            margin-right: 15%;
+            width: 70%;
+        }
+        input {
+            
+        }
+        textarea {
+            border: none;
+            background-color: rgb(247,247,247);
+        }
+        button:hover {
+            background-color: lightslategrey;
+        }
+    
+
+     
+
+     
+
+     
+       
+      
+    </style>
+</head>
+<body >
+    <h1> Welcome to booking </h1>
+   
+    <div id="backgroundImage">
+
+        <div class="main">
+
+        </div>
+       
+            <h2>Reserving a Room at </h2>
+
+            <table class="center" >
+                <caption>Our Guest Rooms</caption>
+                <tr>
+                    <th>Room Type</th>
+                    <th>Maximum Occupancy</th>
+                    <th>Average Price Per Night</th>
+                </tr>
+                <tr>
+                    <td>Singel Room</td>
+                    <td>1</td>
+                    <td>&dollar;100</td>
+                </tr>
+                <tr>
+                    <td>Standard Room</td>
+                    <td>2</td>
+                    <td>&dollar;170</td>
+                </tr>
+                <tr>
+                    <td>Garden View Suite</td>
+                    <td>4</td>
+                    <td>&dollar;220</td>
+                </tr>
+            </table>
+            <h2>Submit a Reservation Request</h2>
+            <form>
+                <p><label>First Name <input type="text"></label></p>
+                <p><label>Last Name <input type="text"></label></p>
+                <p><label>Phone Number <input type="text"></label></p>
+                <p><label>Email <input type="email"></label></p>
+                <fieldset>
+                    <legend>Preferred room type:</legend>
+                    <label><input type="radio" name="room-type">Singel Room</label>
+                    <label><input type="radio" name="room-type">Standard Room</label>
+                    <label><input type="radio" name="room-type">Garden View Suite</label>
+                </fieldset>
+                <p><label>Check In: <input type="date"></label></p>
+                <p><label>Check Out: <input type="date"></label></p>
+                <p><label>Comment or Special Requests</label></p>
+                <textarea></textarea>
+                <p><button type="submit"> Submit Request</button></p>
+                <p><small><strong>Reservations must be made <em>at least</em> 30 days in advance.</strong></small></p>
+            </form>
+    
+
+
+    </div>
+</body>
+</html>
